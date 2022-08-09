@@ -5,6 +5,10 @@ strings_to_write = [
     '좋아요 파이썬..\n',
 ]
 
-handler = open('new-file2.txt', 'a', encoding='utf-8')
-handler.writelines(strings_to_write)
-handler.close()
+# handler = open('new-file2.txt', 'a', encoding='utf-8')
+# handler.writelines(strings_to_write)
+# handler.close()
+
+
+with open('new-file2.txt', 'a', encoding='utf-8') as handler:
+    handler.writelines(strings_to_write)
