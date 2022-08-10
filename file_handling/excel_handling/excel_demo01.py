@@ -1,6 +1,7 @@
 import openpyxl
 import datetime
 
+# 새로운 엑셀 파일을 만들어서 데이터를 셀에 쓰기
 wb = openpyxl.workbook.Workbook()
 
 ws = wb.active
